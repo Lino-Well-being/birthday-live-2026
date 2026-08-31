@@ -149,6 +149,37 @@
     color: var(--muted);
     letter-spacing: 0.1em;
   }
+
+  .profile-photo {
+    width: min(260px, 60vw);
+    margin: 0 auto 36px;
+  }
+  .profile-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 8px 32px rgba(43, 38, 34, 0.15);
+  }
+  .live-photo {
+    max-width: 480px;
+    margin: 0 auto 40px;
+  }
+  .live-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(43, 38, 34, 0.12);
+  }
+  .live-photo figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 10px;
+    letter-spacing: 0.05em;
+  }
 </style>
 </head>
 <body>
@@ -164,6 +195,9 @@
   <div class="wrap">
     <p class="sec-label">PROFILE</p>
     <h2>プロフィール</h2>
+    <figure class="profile-photo">
+      <img src="images/profile.jpg" alt="アルトサックスを持つChihoのポートレート" width="1000" height="1000">
+    </figure>
     <p>東京を中心に、ライブやセッションで活動するサックス奏者です。サックスはソプラノ・アルト・テナーを演奏し、フルート、EWI、NuRADも演奏します。</p>
     <p>オーケストラやバンドでの演奏のほか、歌う方を生バンドで迎えるセッションライブの企画・主催、シンガーのライブ開催のサポートも行っています。ジャズから昭和歌謡、J-POPまで、その場にいる人と一緒に音楽をつくる時間がいちばんの喜びです。</p>
     <p>2026年2月には、自身の主催で「Chiho's Birthday Live 2026 - Reborn 55」を開催しました。</p>
@@ -174,6 +208,10 @@
   <div class="wrap">
     <p class="sec-label">LIVE</p>
     <h2>ライブ・出演予定</h2>
+    <figure class="live-photo">
+      <img src="images/live-soprano.jpg" alt="ライブでソプラノサックスを演奏するChiho" width="900" height="1200" loading="lazy">
+      <figcaption>東京・広尾 Tomo,K'yon,S でのライブより</figcaption>
+    </figure>
     <div class="live-card">
       <span class="status">NEXT LIVE</span>
       <p>次のライブは準備中です。</p>
